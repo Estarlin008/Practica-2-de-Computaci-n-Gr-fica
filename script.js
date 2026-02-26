@@ -15,7 +15,7 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = "blue";
 ctx.fillRect(50, 50, 150, 100);
 
-ctx.strokeStyle = "greed";
+ctx.strokeStyle = "green";
 ctx.strokeRect(250, 50, 150, 100);
 
 //parte 2 (círculo)
@@ -47,8 +47,11 @@ ctx.fillStyle = "orange";
 ctx.fill();
 ctx.stroke();
 
+
+//parte 4
+
 ctx.beginPath();
-ctx.moveTo(200, 600);
-ctx.bezierCurveTo(300, 500, 400, 650, 500, 600);
-ctx.strokeStyle = 4;
+ctx.arc(500, 300, 80, 0, Math.PI * 2);
+ctx.fillStyle = "rgba(255, 255, 255, 0.5";
+ctx.fill();
 ctx.stroke();
